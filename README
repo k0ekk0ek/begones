@@ -1,0 +1,24 @@
+begones - take (remote) text file containing CIDR blocks and store it (reformatted) locally
+
+Primarily intended for use with:
+Team Cymru's Bogon reference http://www.team-cymru.org/Services/Bogons/
+Spamhaus's Don't Route Or Peer (DROP) List http://www.spamhaus.org/drop/
+
+Supported protocols:
+ftp, ftps and tftp
+http and https
+file
+- (stdin)
+
+Formatting:
+%cidr%
+%junk%
+%text%
+%space%
+
+Appending a question mark a option becomes optional, e.g. %junk?% or %space?%
+Defaults can be specified by appending it after the quest mark, e.g. %text?Be gone%
+
+Example filter:
+Input: "Just sometext to demonstrate filtering, 127.0.0.1"
+Filter: "Just some%space?%text to %junk%, %cidr%"
