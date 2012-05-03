@@ -16,8 +16,8 @@ Formatting:
 %text%
 %space%
 
-Appending a question mark a option becomes optional, e.g. %junk?% or %space?%
-Defaults can be specified by appending it after the quest mark, e.g. %text?Be gone%
+Appending a question mark makes an option optional, e.g. %junk?% or %space?%
+Defaults can be specified by appending it after the question mark, e.g. %text?Be gone%
 
 Example filter:
 Input: "Just sometext to demonstrate filtering, 127.0.0.1"
